@@ -4,13 +4,11 @@ Use Metal to find GPUs and perform calculations on them.
 
 ## Overview
 
-In this sample, you’ll learn essential tasks that are used in all Metal apps:
-- Converting a simple function written in C to Metal Shading Language (MSL), so that it can be run on a GPU
-- Finding a GPU
-- Preparing the MSL function to run on the GPU by creating a pipeline
-- Creating memory allocations accessible to the GPU to hold data
-- Creating a command buffer and encoding GPU commands to manipulate the data
-- Committing the buffer to a command queue to make the GPU execute the encoded commands
+In this sample, you’ll learn essential tasks that are used in all Metal apps.
+You'll see how to convert a simple function written in C to Metal Shading Language (MSL) so that it can be run on a GPU.
+You'll find a GPU, prepare the MSL function to run on it by creating a pipeline, and create data objects accessible to the GPU.
+To execute the pipeline against your data, create a *command buffer*, write commands into it, and commit the buffer to a command queue.
+Metal sends the commands to the GPU to be executed.
 
 ## Write a GPU Function to Perform Calculations
 
