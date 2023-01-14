@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3ADA093523458F4800F5A9C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ADA093423458F4400F5A9C6 /* CoreGraphics.framework */; };
-		5FB82D19221CD515006D0331 /* MetalAdder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB82D18221CD515006D0331 /* MetalAdder.m */; };
+		5FB82D19221CD515006D0331 /* MetalMC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB82D18221CD515006D0331 /* MetalMC.m */; };
 		5FFAD4D421C8647E00384F46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFAD4D321C8647E00384F46 /* main.m */; };
 		5FFAD4DC21C8648800384F46 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFAD4DB21C8648800384F46 /* Metal.framework */; };
-		5FFAD4DE21C869B700384F46 /* add.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5FFAD4DD21C869B700384F46 /* add.metal */; };
+		70E335D329651BC8000E8AC5 /* MC_kernels.metal in Sources */ = {isa = PBXBuildFile; fileRef = 70E335D229651BC8000E8AC5 /* MC_kernels.metal */; };
+		70E335D629651C51000E8AC5 /* loki_header.metal in Sources */ = {isa = PBXBuildFile; fileRef = 70E335D429651C51000E8AC5 /* loki_header.metal */; };
+		70E335D729651C51000E8AC5 /* loki.metal in Sources */ = {isa = PBXBuildFile; fileRef = 70E335D529651C51000E8AC5 /* loki.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,15 +30,17 @@
 
 /* Begin PBXFileReference section */
 		3ADA093423458F4400F5A9C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.Internal.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		5FB82D17221CD515006D0331 /* MetalAdder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalAdder.h; sourceTree = "<group>"; };
-		5FB82D18221CD515006D0331 /* MetalAdder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalAdder.m; sourceTree = "<group>"; };
-		5FB82D1A221CE2C7006D0331 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5FFAD4D021C8647E00384F46 /* MetalComputeBasic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MetalComputeBasic; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB82D17221CD515006D0331 /* MetalMC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalMC.h; sourceTree = "<group>"; };
+		5FB82D18221CD515006D0331 /* MetalMC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalMC.m; sourceTree = "<group>"; };
+		5FFAD4D021C8647E00384F46 /* Neu(t)ralMC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Neu(t)ralMC"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFAD4D321C8647E00384F46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FFAD4DB21C8648800384F46 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
-		5FFAD4DD21C869B700384F46 /* add.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = add.metal; sourceTree = "<group>"; };
-		80C16AE080C16FF000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		80C69F6080C69A9000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		709DEDFF2378F66300C1CFC4 /* definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
+		70E335D229651BC8000E8AC5 /* MC_kernels.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MC_kernels.metal; sourceTree = "<group>"; };
+		70E335D429651C51000E8AC5 /* loki_header.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = loki_header.metal; sourceTree = "<group>"; };
+		70E335D529651C51000E8AC5 /* loki.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = loki.metal; sourceTree = "<group>"; };
+		80C16AE080C16FF000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		80C69F6080C69A9000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,7 @@
 		5FFAD4C721C8647D00384F46 = {
 			isa = PBXGroup;
 			children = (
-				5FB82D1A221CE2C7006D0331 /* README.md */,
-				5FFAD4D221C8647E00384F46 /* MetalComputeBasic */,
+				5FFAD4D221C8647E00384F46 /* Neu(t)ralMCCode */,
 				5FFAD4D121C8647E00384F46 /* Products */,
 				5FFAD4DA21C8648800384F46 /* Frameworks */,
 				80C1264080C1608000000001 /* Configuration */,
@@ -67,20 +70,23 @@
 		5FFAD4D121C8647E00384F46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5FFAD4D021C8647E00384F46 /* MetalComputeBasic */,
+				5FFAD4D021C8647E00384F46 /* Neu(t)ralMC */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5FFAD4D221C8647E00384F46 /* MetalComputeBasic */ = {
+		5FFAD4D221C8647E00384F46 /* Neu(t)ralMCCode */ = {
 			isa = PBXGroup;
 			children = (
+				70E335D429651C51000E8AC5 /* loki_header.metal */,
+				70E335D529651C51000E8AC5 /* loki.metal */,
+				70E335D229651BC8000E8AC5 /* MC_kernels.metal */,
 				5FFAD4D321C8647E00384F46 /* main.m */,
-				5FB82D17221CD515006D0331 /* MetalAdder.h */,
-				5FB82D18221CD515006D0331 /* MetalAdder.m */,
-				5FFAD4DD21C869B700384F46 /* add.metal */,
+				5FB82D17221CD515006D0331 /* MetalMC.h */,
+				5FB82D18221CD515006D0331 /* MetalMC.m */,
+				709DEDFF2378F66300C1CFC4 /* definitions.h */,
 			);
-			path = MetalComputeBasic;
+			path = "Neu(t)ralMCCode";
 			sourceTree = "<group>";
 		};
 		5FFAD4DA21C8648800384F46 /* Frameworks */ = {
@@ -105,29 +111,27 @@
 			children = (
 				80C69F6080C69A9000000001 /* LICENSE.txt */,
 			);
-			name = LICENSE;
 			path = LICENSE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5FFAD4CF21C8647E00384F46 /* MetalComputeBasic */ = {
+		5FFAD4CF21C8647E00384F46 /* Neu(t)ralMC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FFAD4D721C8647E00384F46 /* Build configuration list for PBXNativeTarget "MetalComputeBasic" */;
+			buildConfigurationList = 5FFAD4D721C8647E00384F46 /* Build configuration list for PBXNativeTarget "Neu(t)ralMC" */;
 			buildPhases = (
 				5FFAD4CC21C8647E00384F46 /* Sources */,
 				5FFAD4CD21C8647E00384F46 /* Frameworks */,
 				5FFAD4CE21C8647E00384F46 /* CopyFiles */,
-				7FE3E6C07FE3D26000000001,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MetalComputeBasic;
+			name = "Neu(t)ralMC";
 			productName = MetalComputeBasic;
-			productReference = 5FFAD4D021C8647E00384F46 /* MetalComputeBasic */;
+			productReference = 5FFAD4D021C8647E00384F46 /* Neu(t)ralMC */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +140,7 @@
 		5FFAD4C821C8647E00384F46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					5FFAD4CF21C8647E00384F46 = {
@@ -144,19 +148,20 @@
 					};
 				};
 			};
-			buildConfigurationList = 5FFAD4CB21C8647E00384F46 /* Build configuration list for PBXProject "MetalComputeBasic" */;
+			buildConfigurationList = 5FFAD4CB21C8647E00384F46 /* Build configuration list for PBXProject "Neu(t)ralMC" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5FFAD4C721C8647D00384F46;
 			productRefGroup = 5FFAD4D121C8647E00384F46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FFAD4CF21C8647E00384F46 /* MetalComputeBasic */,
+				5FFAD4CF21C8647E00384F46 /* Neu(t)ralMC */,
 			);
 		};
 /* End PBXProject section */
@@ -166,9 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB82D19221CD515006D0331 /* MetalAdder.m in Sources */,
+				5FB82D19221CD515006D0331 /* MetalMC.m in Sources */,
+				70E335D629651C51000E8AC5 /* loki_header.metal in Sources */,
+				70E335D729651C51000E8AC5 /* loki.metal in Sources */,
 				5FFAD4D421C8647E00384F46 /* main.m in Sources */,
-				5FFAD4DE21C869B700384F46 /* add.metal in Sources */,
+				70E335D329651BC8000E8AC5 /* MC_kernels.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +209,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -262,6 +270,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -294,7 +303,8 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 633UC32M92;
+				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -307,7 +317,8 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 633UC32M92;
+				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -317,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5FFAD4CB21C8647E00384F46 /* Build configuration list for PBXProject "MetalComputeBasic" */ = {
+		5FFAD4CB21C8647E00384F46 /* Build configuration list for PBXProject "Neu(t)ralMC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FFAD4D521C8647E00384F46 /* Debug */,
@@ -326,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FFAD4D721C8647E00384F46 /* Build configuration list for PBXNativeTarget "MetalComputeBasic" */ = {
+		5FFAD4D721C8647E00384F46 /* Build configuration list for PBXNativeTarget "Neu(t)ralMC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FFAD4D821C8647E00384F46 /* Debug */,
