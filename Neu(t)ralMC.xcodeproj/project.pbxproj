@@ -11,9 +11,8 @@
 		5FB82D19221CD515006D0331 /* MetalMC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB82D18221CD515006D0331 /* MetalMC.m */; };
 		5FFAD4D421C8647E00384F46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFAD4D321C8647E00384F46 /* main.m */; };
 		5FFAD4DC21C8648800384F46 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFAD4DB21C8648800384F46 /* Metal.framework */; };
-		70E335D329651BC8000E8AC5 /* MC_kernels.metal in Sources */ = {isa = PBXBuildFile; fileRef = 70E335D229651BC8000E8AC5 /* MC_kernels.metal */; };
-		70E335D629651C51000E8AC5 /* loki_header.metal in Sources */ = {isa = PBXBuildFile; fileRef = 70E335D429651C51000E8AC5 /* loki_header.metal */; };
-		70E335D729651C51000E8AC5 /* loki.metal in Sources */ = {isa = PBXBuildFile; fileRef = 70E335D529651C51000E8AC5 /* loki.metal */; };
+		CA3E645229790D3B000D0EBC /* helpers.metal in Sources */ = {isa = PBXBuildFile; fileRef = CA3E645029790D3B000D0EBC /* helpers.metal */; };
+		CA3E645329790D3B000D0EBC /* kernels.metal in Sources */ = {isa = PBXBuildFile; fileRef = CA3E645129790D3B000D0EBC /* kernels.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,11 +35,10 @@
 		5FFAD4D321C8647E00384F46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FFAD4DB21C8648800384F46 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		709DEDFF2378F66300C1CFC4 /* definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
-		70E335D229651BC8000E8AC5 /* MC_kernels.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = MC_kernels.metal; sourceTree = "<group>"; };
-		70E335D429651C51000E8AC5 /* loki_header.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = loki_header.metal; sourceTree = "<group>"; };
-		70E335D529651C51000E8AC5 /* loki.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = loki.metal; sourceTree = "<group>"; };
 		80C16AE080C16FF000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		80C69F6080C69A9000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CA3E645029790D3B000D0EBC /* helpers.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = helpers.metal; sourceTree = "<group>"; };
+		CA3E645129790D3B000D0EBC /* kernels.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = kernels.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +76,8 @@
 		5FFAD4D221C8647E00384F46 /* Neu(t)ralMCCode */ = {
 			isa = PBXGroup;
 			children = (
-				70E335D429651C51000E8AC5 /* loki_header.metal */,
-				70E335D529651C51000E8AC5 /* loki.metal */,
-				70E335D229651BC8000E8AC5 /* MC_kernels.metal */,
+				CA3E645029790D3B000D0EBC /* helpers.metal */,
+				CA3E645129790D3B000D0EBC /* kernels.metal */,
 				5FFAD4D321C8647E00384F46 /* main.m */,
 				5FB82D17221CD515006D0331 /* MetalMC.h */,
 				5FB82D18221CD515006D0331 /* MetalMC.m */,
@@ -172,10 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FB82D19221CD515006D0331 /* MetalMC.m in Sources */,
-				70E335D629651C51000E8AC5 /* loki_header.metal in Sources */,
-				70E335D729651C51000E8AC5 /* loki.metal in Sources */,
 				5FFAD4D421C8647E00384F46 /* main.m in Sources */,
-				70E335D329651BC8000E8AC5 /* MC_kernels.metal in Sources */,
+				CA3E645329790D3B000D0EBC /* kernels.metal in Sources */,
+				CA3E645229790D3B000D0EBC /* helpers.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

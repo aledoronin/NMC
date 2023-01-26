@@ -9,8 +9,8 @@
 #ifndef definitions_h
 #define definitions_h
 
-#define    PHOTON_TOTAL 500000
-#define    PHOTON_BATCH 10000
+#define    PHOTON_TOTAL 1000000
+#define    PHOTON_BATCH 100000
 #define    MAX_SCATT   10000
 #define    WEIGHT_MIN   10e-4
 /* Constants */

@@ -25,7 +25,7 @@ char    name[20];
 FILE*    target;
 
 sprintf(name, "mcOUT%d.dat", Nfile);
-target = fopen(name, "w");
+target = fopen(name, "w+");
 
 /* print run parameters */
 fprintf(target, "%0.3e\tmua, absorption coefficient [1/cm]\n", mua);
