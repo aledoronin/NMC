@@ -1,0 +1,3 @@
+/*
+    Alexander Doronin: initiated and created the original Neu(t)ralMC project, management of source code (2023)
+*/
