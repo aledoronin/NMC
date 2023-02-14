@@ -39,6 +39,8 @@
 		80C69F6080C69A9000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		CA3E645029790D3B000D0EBC /* helpers.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = helpers.metal; sourceTree = "<group>"; };
 		CA3E645129790D3B000D0EBC /* kernels.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = kernels.metal; sourceTree = "<group>"; };
+		CA4AAE51299B0E700017531C /* AUTHORS.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS.txt; sourceTree = "<group>"; };
+		CAA7EDE92994FB2A00BF91E7 /* mcio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mcio.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		5FFAD4D221C8647E00384F46 /* Neu(t)ralMCCode */ = {
 			isa = PBXGroup;
 			children = (
+				CAA7EDE92994FB2A00BF91E7 /* mcio.h */,
 				CA3E645029790D3B000D0EBC /* helpers.metal */,
 				CA3E645129790D3B000D0EBC /* kernels.metal */,
 				5FFAD4D321C8647E00384F46 /* main.m */,
@@ -106,6 +109,7 @@
 		80C698D080C6989000000001 /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
+				CA4AAE51299B0E700017531C /* AUTHORS.txt */,
 				80C69F6080C69A9000000001 /* LICENSE.txt */,
 			);
 			path = LICENSE;
@@ -137,7 +141,7 @@
 		5FFAD4C821C8647E00384F46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					5FFAD4CF21C8647E00384F46 = {
@@ -214,6 +218,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -275,6 +280,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -299,9 +305,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 633UC32M92;
 				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -313,9 +320,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 633UC32M92;
 				ENABLE_HARDENED_RUNTIME = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
