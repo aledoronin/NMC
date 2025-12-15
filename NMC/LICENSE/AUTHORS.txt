@@ -1,0 +1,4 @@
+/*
+    Alexander Doronin: initiated and created the original NMC project, management of source code
+    Steven Jacques: the original author of mcsub and mcxyz kernels
+*/
