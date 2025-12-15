@@ -1,5 +1,5 @@
 # NMC
-Project Neu(t)ralMC: energy-efficient open source Monte Carlo algorithm for assessing photon transport in turbid media
+Project NMC: energy-efficient open source Monte Carlo algorithm for assessing photon transport in turbid media
 
 Light propagation in turbid mediums such as atmosphere, fluids and biological
 tissues is a challenging problem which necessitates accurate simulation techniques to account
